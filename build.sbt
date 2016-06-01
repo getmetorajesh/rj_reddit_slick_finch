@@ -4,6 +4,9 @@ version := "1.0"
 
 scalaVersion := "2.11.7"
 
+//lazy val root = (project in file(".")).enablePlugins(sbt-resolver)
+
+addSbtPlugin("io.spray" % "sbt-revolver" % "0.7.1")
 // Change this to another test framework if you prefer
 libraryDependencies ++= Seq(
 	"org.scalatest" %% "scalatest" % "2.2.4" % "test",
@@ -17,5 +20,16 @@ libraryDependencies ++= Seq(
 	)
 
 // Uncomment to use Akka
-//libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.3.11"
+//libraryDependencies +=
 
+
+resolvers ++= Seq(
+  Resolver.defaultLocal,
+  Resolver.mavenLocal,
+  Resolver.sonatypeRepo("releases"),
+  Resolver.typesafeRepo("releases"),
+  Resolver.typesafeRepo("snapshots"),
+  Resolver.sonatypeRepo("snapshots"),
+  "spray repo" at "http://repo.spray.io",
+  "jgit-repo" at "http://download.eclipse.org/jgit/maven"
+)

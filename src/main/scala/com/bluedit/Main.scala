@@ -9,11 +9,10 @@ import io.circe.generic.auto._
 import com.twitter.finagle.http.{Request, Response}
 import java.util.UUID
 
-case class Link()
+case class Link(id: UUID)
 
-object Link 
-{
-  def get(id: UUID): Option[Link] = { return None}
+object Link {
+  def get(id: UUID): Option[Link] = { return None }
 }
 
 case class LinkNotFound(id: UUID) extends Exception {
@@ -22,7 +21,36 @@ case class LinkNotFound(id: UUID) extends Exception {
 
 
 
-class Main extends App {
+/*
+ * Request readers
+ * case class Foo(i: Int, s: Option[String])
+ * 
+ * val foo1: RequestReader[Foo] = 
+ * (param("i").as[Int] :: paramOption("s")).as[Foo]
+ * 
+ * val foo2: RequestHeader[Foo] = RequestReader.derive[Foo].fromParams
+ * 
+ * implicit class RROps(val rr: RequestReader[String]) { 
+ * 	def as[A: DecodeRequest] : RequestHeader[A] = ??
+ * }
+ * 
+ * val foo: RequestReader[Foo] = body.as[Foo]
+ * 
+ * val patchUser: Endpoint[User] = 
+ * patch("users" / int ? body.as[User]) { (id: Int, u: User) =>
+ * */
+
+
+/* Incomplete Decoders from Circe
+ * 
+ * case class user(id: Int, name: String)
+ * val user: RequestReader[User] =
+ * 	body.as[Int => User].map(f => f(random.nextInt)
+ * */
+
+
+object Main extends App {
+  
   val e: Endpoint[String] = get("hello" / string) { s: String =>
     Ok(s"Hello $s")
   }
@@ -30,6 +58,16 @@ class Main extends App {
   val e2: Endpoint[String] = get("hello" / string) { s: String =>
     Ok(s"Hello $s")
   }
+  
+  val postedLink: RequestReader[Link] =
+    body.as[UUID => Link].map(f => f(UUID.randomUUID()))
+  
+  val postLink: Endpoint[Link] = 
+    post("link" ? postedLink) { l: Link =>
+   // Link.save() 
+    Ok(l)
+  }
+
   
   val deleteLink: Endpoint[Link] = delete("link" / uuid) { id: UUID =>
      Link.get(id) match {
