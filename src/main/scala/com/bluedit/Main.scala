@@ -67,7 +67,26 @@ object Main extends App {
    // Link.save() 
     Ok(l)
   }
+  
+ val getLink: Endpoint[Link] = put("link"/ uuid) { id: UUID => 
+     Link.get(id) match {
+       case Some(link) => {
+        // TODO :: get link with ID 
+         Ok(link);
+       }
+       case None => throw LinkNotFound(id)
+       }
+   }
 
+   val updateLink: Endpoint[Link] = put("link"/ uuid) { id: UUID => 
+     Link.get(id) match {
+       case Some(link) => {
+        // TODO :: update 
+         Ok(link);
+       }
+       case None => throw LinkNotFound(id)
+       }
+   }
   
   val deleteLink: Endpoint[Link] = delete("link" / uuid) { id: UUID =>
      Link.get(id) match {
