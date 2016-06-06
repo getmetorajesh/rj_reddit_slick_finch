@@ -2,11 +2,8 @@ name := """rj_reddit_slick_finch"""
 
 version := "1.0"
 
-scalaVersion := "2.11.7"
+scalaVersion := "2.11.8"
 
-//lazy val root = (project in file(".")).enablePlugins(sbt-resolver)
-
-addSbtPlugin("io.spray" % "sbt-revolver" % "0.7.1")
 // Change this to another test framework if you prefer
 libraryDependencies ++= Seq(
 	"org.scalatest" %% "scalatest" % "2.2.4" % "test",
@@ -15,8 +12,8 @@ libraryDependencies ++= Seq(
   	"com.h2database" % "h2" % "1.4.187",
 	"com.typesafe.slick" %% "slick-codegen" % "3.1.1",
 	"com.github.finagle" %% "finch-core" % "0.10.0",
-	"com.github.finagle" %% "finch-circe" % "0.10.0",
-	 "io.circe" %% "circe-generic" % "0.3.0"
+	"io.circe" %% "circe-generic" % "0.3.0",
+	"com.github.finagle" %% "finch-circe" % "0.10.0"
 	)
 
 // Uncomment to use Akka
@@ -24,12 +21,8 @@ libraryDependencies ++= Seq(
 
 
 resolvers ++= Seq(
-  Resolver.defaultLocal,
-  Resolver.mavenLocal,
-  Resolver.sonatypeRepo("releases"),
-  Resolver.typesafeRepo("releases"),
-  Resolver.typesafeRepo("snapshots"),
-  Resolver.sonatypeRepo("snapshots"),
-  "spray repo" at "http://repo.spray.io",
-  "jgit-repo" at "http://download.eclipse.org/jgit/maven"
+  "Sonatype Releases"   at "http://oss.sonatype.org/content/repositories/releases",
+  "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/",
+  "Spray Repository"    at "http://repo.spray.io/",
+  "Spray Nightlies"     at "http://nightlies.spray.io/"
 )

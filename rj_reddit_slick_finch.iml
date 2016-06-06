@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="EclipseModuleManager">
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.1.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.10.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/Documents/activator/repository/org.slf4j/slf4j-nop/1.6.4/jars/slf4j-nop.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.h2database/h2/jars/h2-1.4.187.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.typesafe.slick/slick-codegen_2.11/jars/slick-codegen_2.11-3.1.1.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.github.finagle/finch-core_2.11/jars/finch-core_2.11-0.10.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.chuusai/shapeless_2.11/bundles/shapeless_2.11-2.2.5.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/org.typelevel/cats-core_2.11/jars/cats-core_2.11-0.4.1.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/org.typelevel/cats-macros_2.11/jars/cats-macros_2.11-0.4.1.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.github.mpilquist/simulacrum_2.11/jars/simulacrum_2.11-0.7.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/org.typelevel/macro-compat_2.11/jars/macro-compat_2.11-1.1.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/org.spire-math/algebra_2.11/jars/algebra_2.11-0.3.1.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/org.spire-math/algebra-std_2.11/jars/algebra-std_2.11-0.3.1.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/org.typelevel/machinist_2.11/jars/machinist_2.11-0.4.1.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.twitter/finagle-http_2.11/jars/finagle-http_2.11-6.33.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.twitter/finagle-core_2.11/jars/finagle-core_2.11-6.33.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-app_2.11/jars/util-app_2.11-6.32.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-core_2.11/jars/util-core_2.11-6.32.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-function_2.11/jars/util-function_2.11-6.32.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.twitter/jsr166e/jars/jsr166e-1.0.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-registry_2.11/jars/util-registry_2.11-6.32.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-cache_2.11/jars/util-cache_2.11-6.32.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-codec_2.11/jars/util-codec_2.11-6.32.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-collection_2.11/jars/util-collection_2.11-6.32.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/commons-collections/commons-collections/jars/commons-collections-3.2.1.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-hashing_2.11/jars/util-hashing_2.11-6.32.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-jvm_2.11/jars/util-jvm_2.11-6.32.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-lint_2.11/jars/util-lint_2.11-6.32.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-logging_2.11/jars/util-logging_2.11-6.32.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-stats_2.11/jars/util-stats_2.11-6.32.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/Documents/activator/repository/io.netty/netty/3.10.1.Final/bundles/netty.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/commons-lang/commons-lang/jars/commons-lang-2.6.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.github.finagle/finch-circe_2.11/jars/finch-circe_2.11-0.10.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/io.circe/circe-core_2.11/jars/circe-core_2.11-0.3.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/io.circe/circe-numbers_2.11/jars/circe-numbers_2.11-0.3.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/org.typelevel/export-hook_2.11/jars/export-hook_2.11-1.1.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/io.circe/circe-jawn_2.11/jars/circe-jawn_2.11-0.3.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/org.spire-math/jawn-parser_2.11/jars/jawn-parser_2.11-0.8.3.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/io.circe/circe-jackson_2.11/jars/circe-jackson_2.11-0.3.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.3.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.3.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/io.circe/circe-generic_2.11/jars/circe-generic_2.11-0.3.0.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/org.scalatest/scalatest_2.11/bundles/scalatest_2.11-2.2.4.jar!/" />
+    <libelement value="jar://$USER_HOME$/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.2.jar!/" />
+    <conelement value="org.scala-ide.sdt.launching.SCALA_CONTAINER" />
+    <src_description expected_position="0">
+      <src_folder value="file://$MODULE_DIR$/src/main/scala-2.11" expected_position="0" />
+      <src_folder value="file://$MODULE_DIR$/src/main/scala" expected_position="1" />
+      <src_folder value="file://$MODULE_DIR$/src/main/java" expected_position="2" />
+      <src_folder value="file://$MODULE_DIR$/src/test/scala-2.11" expected_position="3" />
+      <src_folder value="file://$MODULE_DIR$/src/test/scala" expected_position="4" />
+      <src_folder value="file://$MODULE_DIR$/src/test/java" expected_position="5" />
+    </src_description>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/bin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src/main/scala-2.11" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/scala-2.11" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/scala" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="false" />
+    </content>
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="org.scala-ide.sdt.launching.SCALA_CONTAINER" level="application" />
+    <orderEntry type="module-library">
+      <library name="slick_2.11-3.1.1.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe.slick/slick_2.11/bundles/slick_2.11-3.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="slf4j-api-1.7.10.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.slf4j/slf4j-api/jars/slf4j-api-1.7.10.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="config-1.2.1.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe/config/bundles/config-1.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="reactive-streams-1.0.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.reactivestreams/reactive-streams/jars/reactive-streams-1.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="slf4j-nop.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Documents/activator/repository/org.slf4j/slf4j-nop/1.6.4/jars/slf4j-nop.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="h2-1.4.187.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.h2database/h2/jars/h2-1.4.187.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="slick-codegen_2.11-3.1.1.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.typesafe.slick/slick-codegen_2.11/jars/slick-codegen_2.11-3.1.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="finch-core_2.11-0.10.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.github.finagle/finch-core_2.11/jars/finch-core_2.11-0.10.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="shapeless_2.11-2.2.5.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.chuusai/shapeless_2.11/bundles/shapeless_2.11-2.2.5.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="cats-core_2.11-0.4.1.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.typelevel/cats-core_2.11/jars/cats-core_2.11-0.4.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="cats-macros_2.11-0.4.1.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.typelevel/cats-macros_2.11/jars/cats-macros_2.11-0.4.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="simulacrum_2.11-0.7.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.github.mpilquist/simulacrum_2.11/jars/simulacrum_2.11-0.7.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="macro-compat_2.11-1.1.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.typelevel/macro-compat_2.11/jars/macro-compat_2.11-1.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="algebra_2.11-0.3.1.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.spire-math/algebra_2.11/jars/algebra_2.11-0.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="algebra-std_2.11-0.3.1.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.spire-math/algebra-std_2.11/jars/algebra-std_2.11-0.3.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="machinist_2.11-0.4.1.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.typelevel/machinist_2.11/jars/machinist_2.11-0.4.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="finagle-http_2.11-6.33.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/finagle-http_2.11/jars/finagle-http_2.11-6.33.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="finagle-core_2.11-6.33.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/finagle-core_2.11/jars/finagle-core_2.11-6.33.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="util-app_2.11-6.32.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-app_2.11/jars/util-app_2.11-6.32.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="util-core_2.11-6.32.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-core_2.11/jars/util-core_2.11-6.32.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="util-function_2.11-6.32.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-function_2.11/jars/util-function_2.11-6.32.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jsr166e-1.0.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/jsr166e/jars/jsr166e-1.0.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="scala-parser-combinators_2.11-1.0.4.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang.modules/scala-parser-combinators_2.11/bundles/scala-parser-combinators_2.11-1.0.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="util-registry_2.11-6.32.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-registry_2.11/jars/util-registry_2.11-6.32.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="util-cache_2.11-6.32.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-cache_2.11/jars/util-cache_2.11-6.32.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jsr305-2.0.1.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.google.code.findbugs/jsr305/jars/jsr305-2.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="guava-16.0.1.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.google.guava/guava/bundles/guava-16.0.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="util-codec_2.11-6.32.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-codec_2.11/jars/util-codec_2.11-6.32.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-codec-1.9.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/commons-codec/commons-codec/jars/commons-codec-1.9.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="util-collection_2.11-6.32.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-collection_2.11/jars/util-collection_2.11-6.32.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="javax.inject-1.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/javax.inject/javax.inject/jars/javax.inject-1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-collections-3.2.1.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/commons-collections/commons-collections/jars/commons-collections-3.2.1.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="util-hashing_2.11-6.32.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-hashing_2.11/jars/util-hashing_2.11-6.32.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="util-jvm_2.11-6.32.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-jvm_2.11/jars/util-jvm_2.11-6.32.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="util-lint_2.11-6.32.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-lint_2.11/jars/util-lint_2.11-6.32.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="util-logging_2.11-6.32.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-logging_2.11/jars/util-logging_2.11-6.32.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="util-stats_2.11-6.32.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.twitter/util-stats_2.11/jars/util-stats_2.11-6.32.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="netty.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/Documents/activator/repository/io.netty/netty/3.10.1.Final/bundles/netty.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="commons-lang-2.6.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/commons-lang/commons-lang/jars/commons-lang-2.6.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="finch-circe_2.11-0.10.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.github.finagle/finch-circe_2.11/jars/finch-circe_2.11-0.10.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="circe-core_2.11-0.3.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/io.circe/circe-core_2.11/jars/circe-core_2.11-0.3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="circe-numbers_2.11-0.3.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/io.circe/circe-numbers_2.11/jars/circe-numbers_2.11-0.3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="export-hook_2.11-1.1.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.typelevel/export-hook_2.11/jars/export-hook_2.11-1.1.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="circe-jawn_2.11-0.3.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/io.circe/circe-jawn_2.11/jars/circe-jawn_2.11-0.3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jawn-parser_2.11-0.8.3.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.spire-math/jawn-parser_2.11/jars/jawn-parser_2.11-0.8.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="circe-jackson_2.11-0.3.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/io.circe/circe-jackson_2.11/jars/circe-jackson_2.11-0.3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jackson-core-2.5.3.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.fasterxml.jackson.core/jackson-core/bundles/jackson-core-2.5.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jackson-databind-2.5.3.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.fasterxml.jackson.core/jackson-databind/bundles/jackson-databind-2.5.3.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="jackson-annotations-2.5.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/com.fasterxml.jackson.core/jackson-annotations/bundles/jackson-annotations-2.5.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="circe-generic_2.11-0.3.0.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/io.circe/circe-generic_2.11/jars/circe-generic_2.11-0.3.0.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="scalatest_2.11-2.2.4.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.scalatest/scalatest_2.11/bundles/scalatest_2.11-2.2.4.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="scala-xml_2.11-1.0.2.jar">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.ivy2/cache/org.scala-lang.modules/scala-xml_2.11/bundles/scala-xml_2.11-1.0.2.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+      </library>
+    </orderEntry>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="library" name="scala-sdk-2.11.8" level="application" />
+  </component>
+</module>
