@@ -15,7 +15,7 @@ import io.finch.circe._
 case class Link(title: String)
 
 object Link {
-  
+  def allLinks(): List[Link] = {  return List[Link("1")]}
   def getaLink(id: Int): Link = { return  Link("dsada") }
 }
 
@@ -24,17 +24,42 @@ case class LinkNotFound(id: UUID) extends Exception {
 }
 
 
-object Links{
+object LinksController{
  /* index
-  
-  new
   
   create
   
-  show*/
+  store
+  
+  show
+
+  edit
+
+  update
+
+  destroy*/
+
+  val index: Endpoint[List[Link]] = get("links") {
+    Ok(Link.allLinks())
+  }
+
+  /**
+    * create
+    */
+  val postedLink: RequestReader[Link] =
+    body.as[UUID => Link].map(f => f(UUID.randomUUID()))
+
+  val store: Endpoint[Link] =
+    post("link" / "store" ? postedLink) { l: Link =>
+      // Link.save()
+      Ok(l)
+    }
+
+  val show: Endpoint[Link]
+
   
   
- val getLink: Endpoint[Link] = get("link"/ int) { id: Int => 
+ val getLink: Endpoint[Link] = get("link"/ int) { id: Int =>
      Link.getaLink(id) match {
        case link => {
          println("dasa")
@@ -61,14 +86,11 @@ object Links{
      }
   }*/
   
-  val postedLink: RequestReader[Link] =
-    body.as[UUID => Link].map(f => f(UUID.randomUUID()))
-   
-  val postLink: Endpoint[Link] = 
-    post("link" ? postedLink) { l: Link =>
-   // Link.save() 
-    Ok(l)
-  }
+
   
-  val composedLinksEndpoint: Endpoint[String :+: String :+: CNil] = getLink :+: postedLink
+  val composedLinksEndpoint: Endpoint[
+              List[Link]
+              :+: Link
+              :+: LinK
+              :+: CNil] = index :+: getLink :+: newLink
 }
