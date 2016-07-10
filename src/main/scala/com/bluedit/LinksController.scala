@@ -68,8 +68,15 @@ object LinksController{
   /*
   * Edit
   * */
-  val edit: Endpoint[Link] = put("link" )
-  
+  val edit: Endpoint[Link] = put("link" / int) { id: Int =>
+    Link.getaLink(id) match {
+      case link => {
+        // if link exists then update it
+        // TODO: //
+        Ok(link)
+      }
+    }
+  }
 
 
   /* val updateLink: Endpoint[Link] = put("link"/ uuid) { id: UUID => 
