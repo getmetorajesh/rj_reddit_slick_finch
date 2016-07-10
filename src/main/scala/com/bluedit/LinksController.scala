@@ -46,28 +46,31 @@ object LinksController{
   /**
     * create
     */
-  val postedLink: RequestReader[Link] =
+  val postedLinkReader: RequestReader[Link] =
     body.as[UUID => Link].map(f => f(UUID.randomUUID()))
 
   val store: Endpoint[Link] =
-    post("link" / "store" ? postedLink) { l: Link =>
+    post("link" / "store" ? postedLinkReader) { l: Link =>
       // Link.save()
       Ok(l)
     }
 
-  val show: Endpoint[Link]
-
-  
-  
- val getLink: Endpoint[Link] = get("link"/ int) { id: Int =>
-     Link.getaLink(id) match {
-       case link => {
-         println("dasa")
-        // TODO :: get link with ID 
-         Ok(link)
-       }
-   }
+  val show: Endpoint[Link] = get("link"/ int) { id: Int =>
+    Link.getaLink(id) match {
+      case link => {
+        println("dasa")
+        // TODO :: get link with ID
+        Ok(link)
+      }
+    }
   }
+
+  /*
+  * Edit
+  * */
+  val edit: Endpoint[Link] = put("link" )
+  
+
 
   /* val updateLink: Endpoint[Link] = put("link"/ uuid) { id: UUID => 
      Link.get(id) match {

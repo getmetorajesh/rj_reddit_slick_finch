@@ -4,3 +4,7 @@
 /project/project/
 /project/target/
 /target/
+.worksheet
+*~
+.DS_Store
+.idea/*
